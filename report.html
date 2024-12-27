@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Document</title>
+
+    </head>
+    <body>
+        <h1> Registration form</h1>
+        <form>
+            <p>Name</p>
+            <input type="name" id="name" name="name">
+            <br>
+            "Email: "
+            <input type="email" id="email" name="email">
+            <br>
+            "Password: "
+            <input type="password" id="pass" name="pwd">
+            <br>
+            <input type="button" value="Submit" id="btn">
+
+
+        </form>
+        <script>
+            const btn=document.getElementById("btn");
+            const email=document.getElementById("email");
+            const password=document.getElementById("pwd");
+            const name=document.getElementById("name");
+
+            btn.addEventListener(
+                "click",(e)=>{
+                    e.preventDefault();
+                    alert("login successful");
+                }
+            )
+
+
+            </script>
+
+    </body>
+</html>
